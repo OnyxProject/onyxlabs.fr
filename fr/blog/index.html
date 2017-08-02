@@ -1,0 +1,50 @@
+---
+layout: page
+title: Onyx | Blog
+ref: blog
+permalink: /fr/blog/
+lang: fr
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Les Dernières news d'Onyx</h1>
+          <p>Tous les différents articles concernant Onyx sont regroupés ici.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% assign posts=site.posts | where:"lang", page.lang %}
+{% for post in posts %}
+<div class="post-area">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+  <p class="post-date">{{ post.date | date_to_long_string }}</p>
+  <p>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endfor %}
+
+
+<section id="call-to-action">
+  <div class="container" id="contact-form">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Rejoindre la communauté</h2>
+          <p>Recevez les dernières news du projet pour être à jour sur les nouvelles possibilités !</p>
+          <form action="//onyxlabs.us10.list-manage.com/subscribe/post?u=66e96f6f1267a8d86673a8aae&amp;id=62ae752392" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      			<div class="form-group">
+      				<input type="text" class="form-control" name="EMAIL" placeholder="Email"/>
+      			</div>
+            <input class="btn btn-default" type="submit" value="S'abonner" />
+      		</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

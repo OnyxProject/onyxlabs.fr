@@ -1,0 +1,259 @@
+---
+layout: default
+ref: index
+lang: fr
+---
+
+
+<!-- Slider Start -->
+<section id="slider">
+<div id="banner">
+  <center>
+
+    <div class="logo animated fadeInUp"><img src="{{ site.baseurl }}/img/Logo_white_blue.png" alt="Banner Onyx Logo" class="round" width="20%"></div>
+    <h2 class="animated fadeInUp">Onyx</h2>
+    <p class="animated fadeInUp">Votre assistant domotique personnel qui répond à vos besoins</a></p>
+
+  </center>
+
+</div>
+
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>Qui est Onyx</h2>
+            <p>Onyx est un assistant vocal et visuel open source. Il est totalement personnalisable selon vos besoins et vos envies. C'est une Intelligence Artificielle qui s'adapte en fonction de vous.</p>
+            {% assign posts=site.posts | where:"lang", page.lang | where:"ref", "project" %}
+            {% for post in posts %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-view-works">En savoir plus</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+          <img class="round hide_in_mobile" src="{{ site.baseurl }}/img/Logo_white_blue2.png" alt="Img">
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<section id="call-to-action">
+  <div class="container" id="contact-form">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Rejoindre la communauté</h2>
+          <p>Recevez les dernières news du projet pour être à jour sur les nouvelles possibilités !</p>
+          <form action="//onyxlabs.us10.list-manage.com/subscribe/post?u=66e96f6f1267a8d86673a8aae&amp;id=62ae752392" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      			<div class="form-group">
+      				<input type="text" class="form-control" name="EMAIL" placeholder="Email"/>
+      			</div>
+            <input class="btn btn-default" type="submit" value="S'abonner" />
+      		</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>OPEN SOURCE</h2>
+      <p>Onyx est totalement open source ! C'est à dire que vous pouvez contribuer à son développement très facilement et l'améliorer selon vos besoins.</p>
+      <a href="https://github.com/OnyxProject/Onyx" class="btn btn-view-works">Contribuer</a>
+    </div>
+    <div class="col-md-6">
+      <h2>DES POSSIBILITÉS ILLIMITÉES</h2>
+      <p>Le matin Onyx peut vous préparer votre café et le soir en rentrant chez vous, il vous allume la lumière ainsi que le chauffage. C'est avec son système de scénarios intelligent qu'il est capable de déduire vos faits et d'agir en conséquence ! Vous pouvez lui apprendre des choses autant qu'il puisse vous en apprendre !</p>
+      <a href="{{ site.baseurl }}/{{ site.download[page.lang] }}" class="btn btn-view-works">Installer Onyx</a>
+    </div>
+    <div class="col-md-6 col-md-offset-6">
+      <h2>UNE COMMUNAUTÉ</h2>
+      <p>La grande force d'Onyx est sa communauté ! Elle permet de contribuer au developpement d'Onyx et de l'améliorer chaque jour. Vous pouvez y contribuer simplement et developper vos premiers plugins et skills en moins de 15 minutes.</p>
+      <a href="https://community.onyxlabs.fr/" class="btn btn-view-works">Nous rejoindre</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Les possibilités d'Onyx</h2>
+        <p>Voici quelques compatibilités disponible avec Onyx</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-android-bulb"></i>
+          <h4>Lampes</h4>
+          <p>Onyx allume vos lampes selon vos besoins, pour avoir un reveil en couleur !</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-android-subway"></i>
+          <h4>Transports</h4>
+          <p>Onyx vous donne le chemin de votre vie, ou plutôt le meileur moyen d'atteindre votre travail.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-social-twitter"></i>
+          <h4>Réseaux Sociaux</h4>
+          <p>Vous galérez à gérer vos différents réseaux sociaux ? Onyx est la pour vous aider !</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-android-mail"></i>
+          <h4>Mails</h4>
+          <p>Vous avez plusieurs adresses email et vous ne savez pas comment tout lire ? Onyx vous propose une alternative.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-headphone"></i>
+          <h4>Musique</h4>
+          <p>Ecouter votre musique préférée à travers vos meilleures enceintes.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-partlysunny"></i>
+          <h4>Météo</h4>
+          <p>Quel temps fait il demain ? Comment devrai-je m'habiller ? Onyx est là pour ça !</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-alarm"></i>
+          <h4>Réveil</h4>
+          <p>Vous avez besoin d'un réveil totalement configurable ? Qui calcule votre temps de trajet et vous réveil en conséquence ?</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-calendar"></i>
+          <h4>Calendrier</h4>
+          <p>Gérer vos différents rendez-vous à travers le calendrier d'Onyx.</p>
+        </div>
+      </div>
+
+    </div>
+    <center><a class="btn btn-default btn-call-to-action" href="https://community.onyxlabs.fr" >Voir toutes les compétences disponible</a></center>
+  </div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Ce n'est pas tout</h2>
+          <p>Onyx a des possibilités infinies et cela est grâce à toi derrière ton écran ! Rejoins la communauté et developpe tes propres compétences pour Onyx.</p>
+          <a class="btn btn-default btn-call-to-action" href="https://github.com/OnyxProject/Onyx-Skills" >Nous Rejoindre</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content Start -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Tu es convaincu ?</h2>
+        <p>Commande toi vite un Raspberry Pi et rejoint l'aventure Onyx !</p>
+        <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/{{ site.download[page.lang] }}" >Téléchargement</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="block">
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4 class="counter">10</h4>
+                <span>Communauté</span>
+              </div>
+            </li>
+            <li>
+              <div class="block">
+                <i class="ion-ios-glasses-outline"></i>
+                <h4 class="counter">1</h4>
+                <span>Developpeur</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Clients Logo Section Start -->
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

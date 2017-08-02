@@ -1,0 +1,260 @@
+---
+layout: default
+ref: index
+lang: en
+---
+
+
+<!-- Slider Start -->
+<section id="slider">
+<div id="banner">
+  <center>
+
+    <div class="logo animated fadeInUp"><img src="{{ site.baseurl }}/img/Logo_white_blue.png" alt="Banner Onyx Logo" class="round" width="20%"></div>
+    <h2 class="animated fadeInUp">Onyx</h2>
+    <p class="animated fadeInUp">Onyx is an OpenSource home assistant</a></p>
+
+  </center>
+
+</div>
+
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>Who is Onyx</h2>
+            <p>Onyx is an open source voice assistant. It can be used everywhere and help you. It is open so it can be remixed, improved...</p>
+            {% assign posts=site.posts | where:"lang", page.lang | where:"ref", "project" %}
+            {% for post in posts %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-view-works">More</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+          <img class="round hide_in_mobile" src="{{ site.baseurl }}/img/Logo_white_blue2.png" alt="Img">
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<section id="call-to-action">
+  <div class="container" id="contact-form">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Join the community</h2>
+          <p>Get latest update and news about Onyx and be up to date !</p>
+          <form action="//onyxlabs.us10.list-manage.com/subscribe/post?u=66e96f6f1267a8d86673a8aae&amp;id=62ae752392" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      			<div class="form-group">
+      				<input type="text" class="form-control" name="EMAIL" placeholder="Email"/>
+      			</div>
+            <input class="btn btn-default" type="submit" value="Join" />
+      		</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>OPEN SOURCE</h2>
+      <p>Onyx is an open platform that can be extended and expanded. Its only limit is your imagination. It's an Artificial Intelligence just for you !</p>
+      <a href="https://github.com/OnyxProject/Onyx" class="btn btn-view-works">Contribute</a>
+    </div>
+    <div class="col-md-6">
+      <h2>AMAZING FEATURES</h2>
+      <p>You go home, Onyx lights up the heating and the light and in the morning it can prepare your coffee. It is with its intelligent scenario system that it is able to deduce your facts and act accordingly! You can teach him things as much as he can!</p>
+      <a href="{{ site.baseurl }}/{{ site.download[page.lang] }}" class="btn btn-view-works">Install Onyx</a>
+    </div>
+    <div class="col-md-6 col-md-offset-6">
+      <h2>COMMUNITY</h2>
+      <p>The great strength of Onyx is its community! It makes it possible to contribute to the development of Onyx and to improve it every day. You can simply contribute and develop your first plugins and skills in less than 15 minutes.</p>
+      <a href="https://community.onyxlabs.fr/" class="btn btn-view-works">Join us</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Onyx Possibilities</h2>
+        <p>Here are some compatibilities available with Onyx</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-android-bulb"></i>
+          <h4>Lights</h4>
+          <p>Onyx lights your lamps according to your needs, to have a wake up in color!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-android-subway"></i>
+          <h4>Transports</h4>
+          <p>Onyx gives you the best way to go to your job.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-social-twitter"></i>
+          <h4>Social Networks</h4>
+          <p>You have difficulties to manage your different social networks? Onyx is there to you!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-android-mail"></i>
+          <h4>Mails</h4>
+          <p>You have several email addresses and you do not know how to read everything? Onyx offers you an alternative.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-headphone"></i>
+          <h4>Music</h4>
+          <p>Listen to your favorite music through your best speakers.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-partlysunny"></i>
+          <h4>Weather</h4>
+          <p>What the weather like? How should I dress? Onyx is there for that!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-alarm"></i>
+          <h4>Alarm</h4>
+          <p>Do you need a fully configurable alarm clock? Who calculates your travel time and wakes you up accordingly?</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-calendar"></i>
+          <h4>Calendar</h4>
+          <p>Manage your different meeting through the Onyx calendar.</p>
+        </div>
+      </div>
+
+    </div>
+    <center><a class="btn btn-default btn-call-to-action" href="https://community.onyxlabs.fr" >View All Available Skills</a></center>
+  </div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>That's not all</h2>
+          <p>Onyx has infinite possibilities and this is thanks to you behind your screen! Join the community and develop your own skills for Onyx.</p>
+          <a class="btn btn-default btn-call-to-action" href="https://github.com/OnyxProject/Onyx-Skills" >Join us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content Start -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Are you convinced?</h2>
+        <p>Order a Raspberry Pi and join the Onyx adventure!</p>
+        <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/{{ site.download[page.lang] }}" >Download</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="block">
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4 class="counter">10</h4>
+                <span>Community</span>
+              </div>
+            </li>
+            <li>
+              <div class="block">
+                <i class="ion-ios-glasses-outline"></i>
+                <h4 class="counter">1</h4>
+                <span>Developer</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Clients Logo Section Start -->
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
