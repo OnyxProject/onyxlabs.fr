@@ -38,6 +38,9 @@ contact:
 download:
   en: en/download
   fr: fr/download
+installation:
+  en: en/installation
+  fr: fr/installation
 download_name:
   en: Download
   fr: Téléchargement
