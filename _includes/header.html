@@ -21,10 +21,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ site.baseurl }}/{{ site.installation[page.lang] }}">Installation</a></li>
                 <li><a href="{{ site.baseurl }}/{{ site.download[page.lang] }}">{{ site.download_name[page.lang] }}</a></li>
                 <li><a href="{{ site.baseurl }}/{{ site.blog[page.lang] }}">Blog</a></li>
                 <li><a href="{{ site.baseurl }}/{{ site.contact[page.lang] }}">Contact</a></li>
                 <li><a href="https://community.onyxlabs.fr">Forum</a></li>
+                <li><a href="https://documentation.onyxlabs.fr">Documentation</a></li>
                 <li><a href="https://github.com/OnyxProject/Onyx"><img src="{{ site.baseurl }}/img/github.png" alt="Github" height="24"></a></li>
                 <!--{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                 {% for post in posts %} <li><a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a></li> {% endfor %}
