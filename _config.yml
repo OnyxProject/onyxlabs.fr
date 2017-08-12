@@ -17,6 +17,7 @@ keep_files:
   - ".git"
   - ".gitignore"
 
+host: 0.0.0.0
 
 # Site settings
 title:
