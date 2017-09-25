@@ -26,10 +26,10 @@ port: 4000
 title:
   en: OnyxLabs
   fr: OnyxLabs
-email: your-email@domain.com
+email: contact@onyxlabs.fr
 description:
-  en: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  fr: Écrivez une super description de votre nouveau site ici. Vous pouvez modifier cette ligne dans _config.yml. Elle apparaîtra dans la balise meta description (pour les résultats sur Google) et dans le fil RSS feed.xml.
+  en: Onyx is an open source home assistant
+  fr: Onyx est un assistant personnel qui gère votre maison.
 index:
   en: en
   fr: fr
@@ -45,6 +45,15 @@ download:
 installation:
   en: en/installation
   fr: fr/installation
+installation/skills:
+  en: en/installation/skills
+  fr: fr/installation/skills
+installation/home:
+  en: en/installation/home
+  fr: fr/installation/home
+installation/speak:
+  en: en/installation/speak
+  fr: fr/installation/speak
 download_name:
   en: Download
   fr: Téléchargement
@@ -62,10 +71,3 @@ markdown: kramdown
 # Google analytics
 ga_tracking_id: "UA-61108725-1"
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
