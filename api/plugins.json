@@ -1,11 +1,11 @@
 [
     {
-        "name": "Mail",
-        "slug": "mail",
-        "url": "https://github.com/OnyxPlugins/mail",
-        "description": "Mail client",
-        "long_desc": "Email client for Onyx",
-        "img": "https://anybox.fr/blog/configuration-du-serveur-de-mail-odoo-avec-gmail/@@images/78200f2f-c295-4bb1-9cae-48f8422b5aed.png",
+        "name": "Todo",
+        "slug": "todo",
+        "url": "https://github.com/OnyxPlugins/todo",
+        "description": "Todo list to manage your life",
+        "long_desc": "Todo list to manage your life",
+        "img": "https://i.imgur.com/OvMZBs9.jpg",
         "version" : "1.0.0",
         "author" : "Aituglo"
     }
